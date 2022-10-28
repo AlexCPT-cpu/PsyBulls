@@ -91,7 +91,7 @@ export const ConnectWalletProvider = ({ children }) => {
     setNftContract(nftcontract);
     setMiningContract(miningcontract);
     setLockContract(lockcontract);
-    const unstakednfts = await nftcontract.walletOfOwner(addr);
+   /* const unstakednfts = await nftcontract.walletOfOwner(addr);
     console.log(unstakednfts)
     const unstkarr = [];
     unstakednfts.map((nft) => {
@@ -99,6 +99,7 @@ export const ConnectWalletProvider = ({ children }) => {
       unstkarr.push(nfta);
     });
     setWalletNFTs(unstkarr)
+    */
     let deposit = await lockcontract.depositsOf(addr);
     let id = []
     let di = []
