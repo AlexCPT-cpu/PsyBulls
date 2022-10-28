@@ -26,7 +26,7 @@ export default function Home() {
         size={25}
         weight="bold"
       >
-        <Link href='/Lock'> Lock NFT</Link>
+        <Link href='/' css={{color:"$white"}}> Lock NFT</Link>
         </Text>
         {account ?
             <Button auto color="secondary" flat onClick={DisconnectWallet}>
